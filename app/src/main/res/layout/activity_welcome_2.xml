@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Top Image -->
+    <ImageView
+        android:id="@+id/imgSteps"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/welcome2"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Title with emoji -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/spb"
+        android:text="✨ Big dreams"
+        android:textColor="@android:color/black"
+        android:textSize="44sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imgSteps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Subtitle with emoji -->
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/spb"
+        android:gravity="center"
+        android:text="👣 No clear starting point.\nJust one step today."
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button with emoji -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_margin="24dp"
+        android:text="🚀 Show me how"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:fontFamily="@font/spb"
+        android:background="@drawable/bg_glass_button"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

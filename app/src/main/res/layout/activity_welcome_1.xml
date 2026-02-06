@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imgHero"
+        android:layout_width="414dp"
+        android:layout_height="552dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/welcome1"
+        app:layout_constraintBottom_toTopOf="@id/titleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="👣 One Step Today"
+        android:textSize="40sp"
+        android:fontFamily="@font/spb"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imgHero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="🚀 Turn big dreams into small,\npowerful actions."
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/spb"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:text="Start My Journey"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/spb"
+        android:background="@drawable/bg_glass_button"
+        app:cornerRadius="18dp"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

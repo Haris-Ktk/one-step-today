@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/bg_success_dialog">
+
+    <TextView
+        android:text="🏆 You did it!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Another step completed 🎉"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAwesome"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/bg_bottom_nav"
+        android:fontFamily="@font/spb"
+        android:text="Awesome 🚀"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>
